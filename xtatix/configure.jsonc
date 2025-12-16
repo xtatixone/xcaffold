@@ -1,8 +1,8 @@
 {
   "proxymap": [
     {
-      "source": "sandbox",
-      "target": "sandsrc",
+      "source": "sandbox-src",
+      "target": "sandbox",
       "stylesheet": "index.css",
       "extensions": {
         "html": {

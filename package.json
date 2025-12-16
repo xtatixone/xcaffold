@@ -9,7 +9,7 @@
     "libraries": "libraries"
   },
   "scripts": {
-    "lib:build": "npx sass libsource:libraries --no-source-map",
+    "lib:build": "npx sass libraries-src:libraries --no-source-map",
     "lib:watch": "npx sass --watch libsource:libraries --no-source-map",
     "box:build": "npx xtx preview",
     "box:watch": "npx xtx watch",
