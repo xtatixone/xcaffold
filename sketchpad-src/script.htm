@@ -177,7 +177,7 @@
             const response = JSON.parse(evt.data);
             if (response.method === 'server-state-set' || response.method === 'server-state-init') {
                 tweakIndex[response.result.key]?.apply(response.result.value);
-                OutputUpdate(false);
+                OutputUpdate(false, activeComponent, true);
             } else if (response.method === 'sketchpad-view') {
                 if (AUTOREFRESH) {
                     if (awaitRefresh) { return; }
