@@ -21,7 +21,7 @@ Use this repository as a template to create your own Alchira frameworks and flav
 2. Initialize Alchira in your project directory with the installed **flavour**:
 
 ```sh
-  al init scaffold
+  al init {{package-name}}
 ```
 
 This creates the alchira/* config directory using your chosen flavour.
@@ -65,11 +65,11 @@ Adjust the folder structure to suit your project needs. If you do so, be sure to
 
 ### 4. Update `package.json`
 
-Ensure that your package.json file contains correct author and repository details. Also, update the configs paths if you change the folder layout:
+Ensure that your package.json file contains correct author and repository details. Also, update the `alconfig` paths if you change the folder layout:
 
 ```json
 {
-  "configs": {
+  "alconfig": {
     "name": "scaffold",
     "version": "0.0.0",
     "sketchpad": "sketchpad",
