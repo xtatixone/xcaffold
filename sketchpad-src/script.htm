@@ -31,12 +31,15 @@
         const SymlinkElement = document.getElementById('live-preview-symlink');
 
         const activeComponent = {
-            stitch: "",
-            sketch: "",
+            preview: "",
+            element: "",
+            depends: "",
             symlink: "",
-            attributes: {},
             rootcss: "",
             compcss: "",
+            configs: {},
+            attributes: {},
+            timestamp: ""
         };
 
         const outputState = {
@@ -73,8 +76,8 @@
                 CompCssElement.innerText = newComponent.compcss;
                 RootCssElement.innerText = outputState.useProjectCss ? newComponent.rootcss : "";
 
-                const stitch = (typeof newComponent.stitch === "string") ? newComponent.stitch : '';
-                const structure = (typeof newComponent.sketch === "string" && newComponent.sketch.length) ? newComponent.sketch : "[Placeholder]";
+                const stitch = (typeof newComponent.depends === "string") ? newComponent.depends : '';
+                const structure = (typeof newComponent.preview === "string" && newComponent.preview.length) ? newComponent.preview : "[Placeholder]";
                 const selector = (typeof newComponent.symlink === "string" && newComponent.symlink.length) ? newComponent.symlink : '[N/A]';
 
                 StitchElement.innerHTML = stitch;
