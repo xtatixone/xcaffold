@@ -1,10 +1,10 @@
 {
   "name": "@alchira/scaffold",
-  "description": "Minimally-flavoured Alchira scaffold for small, non-production projects.",
-  "version": "0.0.1",
+  "description": "Minimally-flavoured Alchira scaffold for small projects.",
+  "version": "0.0.2",
   "alconfig": {
     "name": "scaffold",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "sketchpad": "sketchpad",
     "blueprint": "blueprint",
     "libraries": "libraries"
